@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    link(href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet")
+    link(href="assets/css/main.css" rel="stylesheet")
+
+  body
+    .website
+      .heading
+        h1 Flickr Photo Search
+        form
+          input(type="text" name="search" placeholder='Type a search term' id="search")
+          br
+          input(type="submit" value="Search" id="submit")
+          button(type='button') Clear
+      .text Results
+      .grid
+        - var i = 0;
+        while (i++ < 19)
+          .item #{i}
+
+
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src='assets/js/masonry.pkgd.min.js')
+    script(src='assets/js/functions.js')

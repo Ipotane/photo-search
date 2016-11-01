@@ -1,0 +1,124 @@
+body
+  background: #e3e3e3
+  padding: 20px
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+
+.heading
+  background: #ff6758
+  margin: auto
+  text-align: center
+  padding: 5px
+
+  h1
+    color: white
+    margin: 5px
+    margin-top: 0
+    margin-bottom: 10px
+
+  input[type='text']
+    width: 40%
+    padding: 5px
+    border: 1px solid #eee
+    border-radius: 5px
+    margin:auto
+    margin-bottom: 2.5px
+
+
+
+  input[type='submit']
+    height: 20px
+    width: 20%
+    margin: bottom
+
+    &:hover
+      box-shadow: 0px 0px 2px -1px rgba(0,0,0,0.5)
+
+  button
+    width: 20%
+
+    &:hover
+      box-shadow: 0px 0px 2px -1px rgba(0,0,0,0.5)
+
+.text
+  background: #272322
+  color: white
+  margin: auto
+  text-align: center
+  padding: 5px
+
+.website
+  margin: 50px auto
+  background: #fff
+  max-width: 700px
+  box-shadow: 0px 25px 30px -20px rgba(0,0,0,0.2)
+  box-sizing: border-box
+
+.grid
+  padding: 10px
+  perspective: 1000px
+
+  .item
+    background: #ccc
+    height: 60px
+    margin-bottom: 10px
+    display: inline-block
+    width: 100%
+    border-radius: 4px
+    padding: 20px
+    box-sizing: border-box
+    color: white
+    width: 160px
+    background:
+      position: center
+      size: cover
+
+    &:nth-child(4n-5)
+      height: 50px
+
+    &:nth-child(2n)
+      height: 300px
+
+    &:nth-child(3n)
+      height: 120px
+
+
+
+
+
+.item
+  opacity: 0
+
+.item.is-visible
+  animation: Items3 600ms ease-in forwards
+
+
+// Animations
+@keyframes Items2
+  0%
+    opacity: 0
+    height: 0%
+    padding: 0px
+
+  100%
+    opacity: 1
+
+
+@keyframes Items
+  0%
+    opacity: 0
+    transform: scale(0.3) rotateY(90deg)
+  60%
+    transform: scale(1.4)
+  90%
+    transform: scale(0.9)
+  100%
+    opacity: 1
+
+@keyframes Items3
+  0%
+    opacity: 0
+    transform: rotateX(90deg) scale(1.3)
+  100%
+    opacity: 1
+    box-shadow: 3px 0px 4px rgba(0,0,0,0.4)
