@@ -10,7 +10,7 @@ results.hide();
 $('.grid').masonry({
   itemSelector: '.item',
   columnWidth: 160,
-  gutter: 10
+  gutter: 13
 });
 
 //Form Event Listener
