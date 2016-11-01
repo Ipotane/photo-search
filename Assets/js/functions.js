@@ -18,7 +18,7 @@ $('form').submit(function (sub) {
   sub.preventDefault();
 
 //AJAX Request
-var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 var searchTerm = search.val();
 var flickrOptions = {
   tags: searchTerm,
