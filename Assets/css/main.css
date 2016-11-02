@@ -56,7 +56,7 @@ body {
 .website {
   margin: 50px auto;
   background: #fff;
-  max-width: 700px;
+  width: 57.25%;
   box-shadow: 0px 25px 30px -20px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
@@ -113,4 +113,54 @@ body {
     opacity: 1;
     box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.4);
   }
+}
+
+
+
+
+
+@media (max-width: 770px){
+  .website{
+    margin: 0px auto;
+    width: 95%;
+  }
+  .grid{
+    display: block;
+  }
+
+  .heading input[type='text'] {
+    width: 90%;
+    margin-bottom: 6px
+  }
+
+  .heading input[type='submit'],
+  .heading button {
+    width: 45%;
+  }
+
+  .grid .item {
+    display: block;
+    width: 85%;
+    margin: 12px auto;
+    padding: 20px;
+
+  }
+
+  .item.is-visible {
+    opacity: 1;
+    animation: none;
+  }
+
+  .grid .item:nth-child(4n-5) {
+    height: 300px;
+  }
+
+  .grid .item:nth-child(2n) {
+    height: 300px;
+  }
+
+  .grid .item:nth-child(3n) {
+    height: 300px;
+  }
+
 }

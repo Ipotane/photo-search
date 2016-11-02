@@ -7,11 +7,13 @@
 results.hide();
 
 // masonry
-$('.grid').masonry({
-  itemSelector: '.item',
-  columnWidth: 160,
-  gutter: 13
-});
+if(window.innerWidth > 770){
+  $('.grid').masonry({
+    itemSelector: '.item',
+    columnWidth: 160,
+    gutter: 13
+  });
+}
 
 //Form Event Listener
 $('form').submit(function (sub) {
