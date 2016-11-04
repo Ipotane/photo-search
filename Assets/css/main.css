@@ -24,26 +24,32 @@ body {
   padding: 5px;
   border: 1px solid #eee;
   border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   margin-bottom: 2.5px;
+  background-color: #f5f5f5;
 }
 
 .heading input[type='submit'] {
   width: 5%;
+  margin-left: -4.5px;
   text-indent: -99999px;
-  background:#ccc;
-  background-image: url('../img/magnifier.svg');
-  background-size: cover;
+  background:#272322;
+  background-image: url('../img/magnifier-wht.svg');
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
   border-radius: 5px;
-  padding:5px 15px;
-  border:0 none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding:6px;
+  border:1px none;
   cursor: pointer;
 }
 
 .heading input[type='submit']:hover {
-  box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
 }
 
 .text {
@@ -130,11 +136,8 @@ body {
   }
 
   .heading input[type='text'] {
-    width: 75%;
+    width: 60%;
     margin-bottom: 6px
-  }
-
-  .heading input[type='submit'] {
   }
 
   .grid .item {
