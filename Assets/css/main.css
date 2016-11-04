@@ -28,20 +28,21 @@ body {
 }
 
 .heading input[type='submit'] {
-  height: 20px;
-  width: 20%;
-  margin: bottom;
+  width: 5%;
+  text-indent: -99999px;
+  background:#ccc;
+  background-image: url('../img/magnifier.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  border-radius: 5px;
+  padding:5px 15px;
+  border:0 none;
+  cursor: pointer;
 }
 
 .heading input[type='submit']:hover {
-  box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.5);
-}
-
-.heading button {
-  width: 20%;
-}
-
-.heading button:hover {
   box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.5);
 }
 
@@ -129,13 +130,11 @@ body {
   }
 
   .heading input[type='text'] {
-    width: 90%;
+    width: 75%;
     margin-bottom: 6px
   }
 
-  .heading input[type='submit'],
-  .heading button {
-    width: 45%;
+  .heading input[type='submit'] {
   }
 
   .grid .item {

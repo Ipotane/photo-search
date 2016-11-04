@@ -27,6 +27,14 @@ var flickrOptions = {
   format: "json"
 };
   function displayPhotos(data) {
+
+    /* If a search has already been displayed, this removes visible class
+    and retriggers animation on new search */
+    if(items.hasClass('is-visible')){
+      items.removeClass('is-visible');
+      results.hide();
+    }
+
     results.show("fast");
 
     // cycles through flickr data
@@ -47,9 +55,3 @@ var flickrOptions = {
 
   $.getJSON(flickerAPI, flickrOptions, displayPhotos);
 });
-
-//reset
-$('button').click(function(){
-  items.removeClass('is-visible');
-  results.hide();
-})
