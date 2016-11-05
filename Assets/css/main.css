@@ -35,7 +35,7 @@ body {
   margin-left: -4.5px;
   text-indent: -99999px;
   background:#272322;
-  background-image: url('../img/magnifier.svg');
+  background-image: url('magnifier.svg');
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
