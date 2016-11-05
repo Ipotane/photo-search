@@ -31,8 +31,7 @@ var flickrOptions = {
     /* If a search has already been displayed, this removes visible class
     and retriggers animation on new search */
     if(items.hasClass('is-visible')){
-      items.removeClass('is-visible');
-      results.hide();
+      items.removeClass('is-visible'); 
     }
 
     results.show("fast");
